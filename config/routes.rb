@@ -1,4 +1,6 @@
 AjaxSearch::Application.routes.draw do
+  resources :searches
+
   resources :todos
 
   resources :users
