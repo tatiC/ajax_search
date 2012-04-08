@@ -27,7 +27,9 @@ I know this is not the best solution but, doing this way i will have to "do it m
 When the time comes i'll try a mix of the solutions above.
 
 Gems used in this project:
-	ransack
-	inherited_resources
+	
+	ransack: https://github.com/ernie/ransack
+	
+	inherited_resources: https://github.com/josevalim/inherited_resources
 
 Cheers!
