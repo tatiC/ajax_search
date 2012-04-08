@@ -1,0 +1,18 @@
+<% unless @todos.any? %>
+  <p style="text-align: center; font-size: 15px;">Nenhuma demanda no sistema</p><br clear="all">
+<% else %>  
+  <table style="float:left; margin-left: 25px;">
+    <tr>
+      <th>Todo</th>
+      <th>Status</th>
+    </tr>
+    
+  <% @todos.each do |todo| %>
+    <tr>
+      <td><%= todo.name %></td>
+      <td><%= todo.status %></td>
+	  </tr>	
+  <% end %>
+  </table><br clear="all" /><br />
+
+<% end %>

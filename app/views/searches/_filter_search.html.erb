@@ -1,0 +1,23 @@
+<%= search_form_for(@todo_filter, :remote => true, :html => { :id => "search_todos_filter_form" } ) do |f| %>
+  <fieldset style="padding: 7px; width: 91%; float:left; margin-left:15px">
+    <legend>Search</legend>
+
+    <div style="margin-left: 100px">
+      <p>
+        <%= f.label :name_eq, "Todo:" %><br>
+        <%= f.collection_select :name_eq,
+          Todo.all, :name, :name, :include_blank => true %>
+      </p>
+    </div>
+
+    <div style="margin-left: 100px">
+      <p>
+        <%= f.label :status_eq, "Status:" %><br>
+        <%= f.collection_select :status_eq,
+          Todo::STATUS, :to_s, :to_s, :include_blank => true %>
+      </p>
+    </div>
+
+  </fieldset>
+  <br clear="all" /><br />
+<% end %>

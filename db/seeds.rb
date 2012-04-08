@@ -1,1 +1,1 @@
-User.create(:name => "Tatiana Carvalho", :login => "tcarvalho", :email => "tatigmc@gmail.com")
+User.create(:name => "Tatiana Carvalho", :login => "tcarvalho", :email => "tatigmc@gmail.com", :password => "password", :password_confirmation => "password")

@@ -25,10 +25,10 @@ ActiveRecord::Schema.define(:version => 20120408181854) do
 
   create_table "todos", :force => true do |t|
     t.string   "name"
-    t.string   "status"
+    t.string   "status",     :default => "Open"
     t.integer  "user_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                     :null => false
+    t.datetime "updated_at",                     :null => false
   end
 
   add_index "todos", ["user_id"], :name => "index_todos_on_user_id"

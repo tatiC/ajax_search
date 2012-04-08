@@ -8,6 +8,7 @@ class User < ActiveRecord::Base
   set_table_name 'users'
   
   has_many :todos
+  has_many :searches
 
   validates :login, :presence   => true,
                     :uniqueness => true,

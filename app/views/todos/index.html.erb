@@ -14,7 +14,7 @@
   <tr>
     <td><%= todo.name %></td>
     <td><%= todo.status %></td>
-    <td><%= todo.user %></td>
+    <td><%= todo.user.name %></td>
     <td><%= link_to 'Show', todo %></td>
     <td><%= link_to 'Edit', edit_todo_path(todo) %></td>
     <td><%= link_to 'Destroy', todo, confirm: 'Are you sure?', method: :delete %></td>
@@ -24,4 +24,4 @@
 
 <br />
 
-<%= link_to 'New Todo', new_todo_path %>
+<%= link_to 'New Todo', new_todo_path %> || <%= link_to "Search!", searches_path %>

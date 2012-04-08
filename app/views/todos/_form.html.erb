@@ -1,28 +1,20 @@
 <%= form_for(@todo) do |f| %>
-  <% if @todo.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@todo.errors.count, "error") %> prohibited this todo from being saved:</h2>
-
-      <ul>
-      <% @todo.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
+	<% if @todo.errors.any? %>
+		<%= render :partial => "application/resource_errors", :locals => { :resource => @todo } %> 
+	<% end %>
+  
   <div class="field">
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </div>
-  <div class="field">
-    <%= f.label :status %><br />
-    <%= f.text_field :status %>
-  </div>
-  <div class="field">
-    <%= f.label :user %><br />
-    <%= f.text_field :user %>
-  </div>
+	
+	<% if action_name == 'edit' %>
+		<div class="field">
+	    <%= f.label :status %><br />
+	  	<%= f.collection_select :status, Todo::STATUS, :to_s, :to_s,  { :include_blank => true } %>   
+	  </div>
+	<% end %>
+  
   <div class="actions">
     <%= f.submit %>
   </div>

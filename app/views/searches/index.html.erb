@@ -1,27 +1,11 @@
-<h1>Listing searches</h1>
+<div>
+  <br />
 
-<table>
-  <tr>
-    <th>User</th>
-    <th>Name</th>
-    <th>Status</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+	<%= render :partial => "filter_search" %>
 
-<% @searches.each do |search| %>
-  <tr>
-    <td><%= search.user %></td>
-    <td><%= search.name %></td>
-    <td><%= search.status %></td>
-    <td><%= link_to 'Show', search %></td>
-    <td><%= link_to 'Edit', edit_search_path(search) %></td>
-    <td><%= link_to 'Destroy', search, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
+  <div id="search">
+    <%= render :partial => "search" %>
+  </div>      
+</div>
 
-<br />
-
-<%= link_to 'New Search', new_search_path %>
+<%= link_to "Create new todo!", todos_path %>
