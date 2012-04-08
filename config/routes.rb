@@ -8,5 +8,5 @@ AjaxSearch::Application.routes.draw do
   match 'login' => 'sessions#new', :as => :login
   match 'logout' => 'sessions#destroy', :as => :logout
 
-  root :to => 'users#index'
+  root :to => 'users#new'
 end
