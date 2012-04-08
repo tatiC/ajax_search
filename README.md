@@ -24,6 +24,10 @@ After reading i thought:
 	
 I know this is not the best solution but, doing this way i will have to "do it myself" but...this is good, so i can make some mistakes and learn with them.
 
-When the time comes i'll try a mix of the solutions above.	
+When the time comes i'll try a mix of the solutions above.
+
+Gems used in this project:
+	ransack
+	inherited_resources
 
 Cheers!
