@@ -1,4 +1,6 @@
 AjaxSearch::Application.routes.draw do
+  resources :todos
+
   resources :users
 
   resource :session, :only => [:new, :create, :destroy]
