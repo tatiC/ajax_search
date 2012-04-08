@@ -1,4 +1,56 @@
-/*
-  Place all the styles related to the matching controller here.
-  They will automatically be included in application.css.
-*/
+#direito{
+        width:550px;
+        height:auto;
+        float:right;
+}
+
+.nome_painel{
+        font-size:16px;
+        font-weight:bold;
+        color:#9a0505;
+        text-align:center;
+}
+
+table#tabela_feitos{
+        width:289px;
+        height:auto;
+        border-collapse:collapse;
+        border:1px solid #e2e1e1;
+        margin-top:35px;
+}
+
+table#tabela_feitos tr th{
+        width:289px;
+        border-bottom:1px solid #e2e1e1;
+        background:#dbd9d9;
+        padding:5px;
+        vertical-align:top;
+        font-size:16px;
+        font-weight:bold;
+        color:#9a0505;
+        text-align:left;
+}
+
+
+table#tabela_feitos tr td{
+        width:289px;
+        border-bottom:1px solid #e2e1e1;
+        background:#f2f1f1;
+        padding:13px;
+        vertical-align:top;
+}
+        
+table#tabela_feitos tr td p{
+        color:#bcbbbb;
+        font-size:12px;
+}       
+
+table#tabela_feitos tr td p span{
+        color:#8f8e8e;
+        font-size:12px;
+}       
+
+table#tabela_feitos tr td p.nome_demanda a{
+        color:#9a0505;
+        font-size:14px;
+}

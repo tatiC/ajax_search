@@ -7,8 +7,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<%= render :partial => "shared/flash_messages" %>
 
 <%= yield %>
+
+<% if logged_in? %>
+
+	<%= link_to "Log out", logout_path %></p>
+	
+	<% if !current_user.searches.empty? %>
+	</br>
+	</br>
+	<%= render :partial => "users/last_searches" %>
+	<% end %>
+<% end %>	
 
 </body>
 </html>

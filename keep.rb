@@ -30,3 +30,9 @@ class UsersController < ApplicationController
   end
   
 end
+
+$("#click").click(function()	
+{ 
+   jQuery.ajax({data: $("#click").serialize(), dataType: 'script',
+       type:'get', url:'/users/search?utf8=%E2%9C%93&q%5Bid_eq%5D=&q%5Bage_eq%5D=99&_=1333856241837'});
+ });

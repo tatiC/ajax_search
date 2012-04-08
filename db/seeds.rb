@@ -1,1 +1,2 @@
 User.create(:name => "Tatiana Carvalho", :login => "tcarvalho", :email => "tatigmc@gmail.com", :password => "password", :password_confirmation => "password")
+User.create(:name => "user", :login => "user", :email => "user@gmail.com", :password => "password", :password_confirmation => "password")

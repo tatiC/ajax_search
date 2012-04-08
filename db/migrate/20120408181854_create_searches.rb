@@ -4,6 +4,7 @@ class CreateSearches < ActiveRecord::Migration
       t.references :user
       t.string :name
       t.string :status
+      t.string :url
 
       t.timestamps
     end

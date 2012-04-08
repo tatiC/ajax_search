@@ -24,6 +24,23 @@ div.field, div.actions {
   color: green;
 }
 
+.flash
+{
+  margin: 0 auto;
+  width: 280px;
+}
+
+.flash_error
+{
+  color: red;
+}
+
+.flash_notice
+{
+  color: green;
+}
+
+
 .field_with_errors {
   padding: 2px;
   background-color: red;

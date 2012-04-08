@@ -33,3 +33,8 @@ Gems used in this project:
 	inherited_resources: https://github.com/josevalim/inherited_resources
 
 Cheers!
+
+project link on heroku: http://empty-winter-7288.herokuapp.com/
+
+Login: user
+Password: password

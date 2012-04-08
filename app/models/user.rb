@@ -40,6 +40,10 @@ class User < ActiveRecord::Base
   def email=(value)
     write_attribute :email, (value ? value.downcase : nil)
   end
+  
+  def last_searches
+    current_users.searches
+  end
 
   protected
     

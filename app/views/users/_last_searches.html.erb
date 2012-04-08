@@ -1,0 +1,33 @@
+<div id="direito">
+  <table id="tabela_feitos">
+    <tr>
+      <th>Your last searches:</th>
+    </tr>
+    
+    <% if current_user.searches.empty? %>
+      <tr>
+        <td>
+          <p class="fonte_cinza">No search.</p>
+        </td>  
+      <tr>                              
+    <% else %>    
+      <% current_user.searches.each do |s| %>
+        <tr>
+          <td>
+						<% if s.name? %>
+							<p class="nome_demanda">Todo  name: <%= s.name %></br>
+						<% else %>
+							<p>No name search.</p></br>
+						<% end %>
+						<% if s.status? %>	
+							<p class="nome_demanda">Todo  status: <%= s.status %></p></br>
+						<% else %>	
+							<p>No status search.</p></br>
+						<% end %>
+						<%= link_to "Ver", todos_path, :remote => true %>
+					</td>
+        </tr>
+      <% end %>
+    <% end %>  
+  </table>
+</div>

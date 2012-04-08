@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(:version => 20120408181854) do
     t.integer  "user_id"
     t.string   "name"
     t.string   "status"
+    t.string   "url"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
