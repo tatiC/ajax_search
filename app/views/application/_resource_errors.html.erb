@@ -1,0 +1,15 @@
+<% if resource.errors.any? %>
+  <div id="error_explanation">
+    <h2>
+      <%= pluralize(resource.errors.count, "erro") %>:
+    </h2>
+
+    <ul>
+      <% resource.errors.full_messages.each do |error_message| %>
+        <li><%= error_message %></li>
+      <% end %>
+    </ul>
+  </div>
+  
+  <br clear="all" />
+<% end %>
