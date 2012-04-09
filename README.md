@@ -22,7 +22,8 @@ The "problem":
 After reading i thought:
 	why not save the user search and show the last five?
 	
-I know this is not the best solution but, doing this way i will have to "do it myself" but...this is good, so i can make some mistakes and learn with them.
+I know this is not the best solution but, doing this way i will have to "do it myself" but...this is good, so i can make some mistakes and learn with them. 
+Also => i'm not fixing the real problem!!! 
 
 When the time comes i'll try a mix of the solutions above.
 
@@ -38,3 +39,11 @@ project link on heroku: http://empty-winter-7288.herokuapp.com/
 
 Login: user
 Password: password
+
+09/04/2012 UPDATE!
+
+Great link:
+
+  http://www.contentwithstyle.co.uk/content/fixing-the-back-button-and-enabling-bookmarking-for-ajax-apps/
+  
+found on: https://developer.mozilla.org/en/Ajax  
