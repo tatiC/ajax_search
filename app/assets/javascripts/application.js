@@ -12,4 +12,5 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require history_jquery.min    # jQuery 1.3+
 //= require_tree .

@@ -20,3 +20,5 @@ gem 'jquery-rails'
 gem 'ransack', '0.6.0'
 
 gem 'inherited_resources'
+
+gem 'historyjs-rails'
